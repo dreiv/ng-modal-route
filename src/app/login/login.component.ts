@@ -12,4 +12,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  modalClose($event: any): void {
+    console.log($event); // { submitted: true }
+  }
 }

@@ -1,5 +1,8 @@
-<app-modal>
+<app-modal (modalClose)="modalClose($event)" #modal="modal">
   <div modal-header>Login</div>
   <div modal-body>Login body</div>
-  <div modal-footer>Login footer</div>
+  <div modal-footer>
+    Login footer
+    <button (click)="modal.closeModal({submitted: true})">Submit</button>
+  </div>
 </app-modal>
