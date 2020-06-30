@@ -1,10 +1,10 @@
 <div class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <button class="close" (click)="closeModal($event)">&times;</button>
       <h2>
         <ng-content select="[modal-header]"></ng-content>
       </h2>
+      <button class="close" (click)="closeModal($event)">&times;</button>
     </div>
     <div class="modal-body">
       <ng-content select="[modal-body]"></ng-content>
